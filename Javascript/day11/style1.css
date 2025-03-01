@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('gym-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 40px 20px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #about, #services, #contact {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}

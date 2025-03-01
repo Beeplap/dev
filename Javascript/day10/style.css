@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+#box{
+    height: 20rem;
+    width: 18rem;
+    background-Color: green;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(74, 74, 74);
+    color: rgb(175, 226, 255);
+    border: none;
+    cursor: pointer;
+}

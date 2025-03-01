@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  header .logo img {
+    width: 150px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #444;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  #services, #cars, #media, #contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .service-item, .car-item {
+    margin-bottom: 30px;
+  }
+  
+  .car-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .car-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .car-item img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .media-gallery iframe {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Mobile responsive navigation */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #000;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    nav.active ul {
+      display: flex;
+    }
+  }
+  

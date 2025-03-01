@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Country Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>World Country Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>SN</th>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Region</th>
+            <th>Population</th>
+            <th>Area</th>
+            <th>Flag</th>
+        </tr>
+    </thead>
+    <tbody id="country-table">
+    </tbody>
+</table>
+
+<script>
+    async function fetchCountries() {
+        const url = 'https://restcountries.com/v3.1/all';  // API endpoint to fetch country data
+        try {
+            const response = await fetch(url);
+            const countries = await response.json();
+            const tableBody = document.getElementById('country-table');
+            
+            countries.forEach((country, index) => {
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${country.name.common}</td>
+                    <td>${country.capital ? country.capital[0] : 'N/A'}</td>
+                    <td>${country.region}</td>
+                    <td>${country.population.toLocaleString()}</td>
+                    <td>${country.area ? country.area.toLocaleString() : 'N/A'}</td>
+                    <td><img src="${country.flags.png}" alt="Flag of ${country.name.common}" /></td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        } catch (error) {
+            console.error('Error fetching countries:', error);
+        }
+    }
+
+    fetchCountries();
+</script>
+
+</body>
+</html>

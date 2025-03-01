@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19</title>
+</head>
+
+<body>
+    <!-- <div id="container">
+        <div class="myDiv">Hello div</div>
+        <div class="myDiv2">Hello World</div>
+    </div> -->
+
+    <!-- <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul> -->
+
+
+    <form onsubmit="return handleSubmit()">
+        <label for="input"></label>
+        <input class="input" type="text"> <br>
+        <button type="submit">Save</button> <br>
+    </form>
+    <div id="display"></div>
+
+
+    <!-- create input field in html, and a submit button, and a div below the form where
+    the user will see the data entered in the input field using localStorage -->
+
+
+</body>
+<script>
+    let data = localStorage.getItem( "data" )
+    let display = document.querySelector( '#display' )
+    if ( data )
+    {
+        display.innerHTML = data
+    }
+    console.log( data )
+
+    function handleSubmit()
+    {
+        let input = document.querySelector( '.input' ).value
+
+        if ( !input )
+        {
+            alert( "input is required" )
+            return false
+        }
+        localStorage.setItem( "data", input )
+    }
+
+    // creating and appending elements
+    // let mySpan = document.createElement( 'span' ) // create new span
+
+    // let myDiv = document.querySelector( '.myDiv' ) // selecting node
+
+    // myDiv.appendChild( mySpan ) // appending span to div
+
+    // let span = document.querySelector( 'span' ) // selecting span
+    // span.innerHTML = "Hello World" // setting innerHTML of span
+
+
+    // removing element
+    // let myDiv = document.querySelector( '.myDiv' )
+    // myDiv.remove();
+
+    // let myDiv = document.querySelector( '#container' )
+    // myDiv.remove()
+
+    // removing specific child
+    // let ul = document.querySelector( 'ul' )
+    // ul.removeChild( ul.firstElementChild ) // removes the first child
+    // ul.removeChild( ul.lastElementChild ) // removes the second child
+    // ul.removeChild( ul.children[ 5 ] ) // removes the specific child
+
+
+    //localStorage
+
+    // setting item & its value in local storage
+    // localStorage.setItem( "name", "Butwal Kalika Campus" )
+    // localStorage.setItem( "name1", "Butwal Kalika Campus" )
+    // localStorage.setItem( "name2", "Butwal Kalika Campus" )
+    // localStorage.setItem( "name3", "Butwal Kalika Campus" )
+    // localStorage.setItem( "name4", "Butwal Kalika Campus" )
+
+    // retrieving item from local storage
+    // let local = localStorage.getItem( "name" )
+    // console.log( local )
+
+    //removing item from local storage
+    // localStorage.removeItem( "name" )
+
+    //removing all items from local storage
+    // localStorage.clear()
+
+
+</script>
+
+
+</html>

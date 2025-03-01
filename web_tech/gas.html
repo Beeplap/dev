@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Monkey Garage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+      width: 150px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #hero {
+      background: url('hero.jpg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 4rem;
+      color: #ff6600;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .cta-button {
+      padding: 12px 30px;
+      background-color: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    #services, #cars, #media, #contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #services h2, #cars h2, #media h2 {
+      color: #ff6600;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .service-item, .car-item {
+      display: inline-block;
+      width: 30%;
+      margin: 15px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .car-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .car-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .car-item img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .media-gallery iframe {
+      width: 100%;
+      max-width: 800px;
+      border: none;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    #contact form input, #contact form textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #333;
+      border: 1px solid #555;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    #contact form button {
+      padding: 12px 20px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .service-item, .car-item {
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Gas Monkey Garage Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to Gas Monkey Garage</h1>
+    <a href="#services" class="cta-button">Explore Our Services</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+      <h3>Custom Builds</h3>
+      <p>We specialize in creating custom cars that match your unique style.</p>
+    </div>
+    <div class="service-item">
+      <h3>Restoration</h3>
+      <p>Bring back the glory of classic cars with our expert restoration services.</p>
+    </div>
+    <div class="service-item">
+      <h3>Performance Tuning</h3>
+      <p>Optimize your car’s performance with our professional tuning services.</p>
+    </div>
+  </section>
+
+  <!-- Cars Gallery Section -->
+  <section id="cars">
+    <h2>Featured Cars</h2>
+    <div class="car-gallery">
+      <div class="car-item">
+        <img src="car1.jpg" alt="Car 1">
+        <h3>Classic Mustang</h3>
+      </div>
+      <div class="car-item">
+        <img src="car2.jpg" alt="Car 2">
+        <h3>Custom Camaro</h3>
+      </div>
+      <div class="car-item">
+        <img src="car3.jpg" alt="Car 3">
+        <h3>Street Rod</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media">
+    <h2>Watch Us in Action</h2>
+    <div class="media-gallery">
+      <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Gas Monkey Garage. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

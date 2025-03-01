@@ -1,0 +1,12 @@
+
+ function with arguments with return types
+
+ funtions with arguments with no return types
+
+ function with no arguments without return types
+
+ function with no arguments with return types
+
+        declaration 
+                call function
+                 function defination

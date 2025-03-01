@@ -1,0 +1,1 @@
+//  wap input the electricity unit, if unit is less than 100 (5rs per unit charges) otherwise unit charge is 7rs per unit and meter charge is 150 find the total electricity charge

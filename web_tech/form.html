@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            
+            background-color: #f6e04d;
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            
+            
+            padding: 4px 10px;
+            
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: none;
+        }
+        input[type="radio"], input[type="file"] {
+            width: auto;
+            
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+   
+    </tr>
+    <form >
+        <fieldset>
+            <legend style="margin-top: 40px;" align="center">Student Registration Form</legend>
+            <p align="center">Admission From</p>
+
+            
+        <table cellspacing="0" align="center">
+            
+            <tr>
+                <td width="500vh">Roll No:</td>
+                <td><input type="number" placeholder="Enter your roll no"></td>
+            </tr>
+            <tr>
+                <td>Student's Full Name:</td>
+                <td><input type="text" placeholder="Input Student's name"></td>
+            </tr>
+            <tr>
+                <td>Student's Address:</td>
+                <td><input type="text" placeholder="Input Student's Address"></td>
+            </tr>
+            <tr>
+                <td>Student's Phone:</td>
+                <td><input type="text" placeholder="Input Student's Phone"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>Student Email:</td>
+                <td><input type="email" placeholder="Input Student's email"></td>
+            </tr>
+            <tr>
+                <td>Student's DOB:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Student's Faculty:</td>
+                <td>
+                    <input type="radio" name="faculty" value="at"> AT
+                    <input type="radio" name="faculty" value="dba"> DBA
+                    <input type="radio" name="faculty" value="nsa"> NSA
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Student Image:</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Select Faculty:</td>
+                <td>
+                    <select>
+                        <option value="select">Select...</option>
+                        <option value="science">Science</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Write your comment:</td>
+                <td><textarea rows="4" placeholder="Write your comment"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
