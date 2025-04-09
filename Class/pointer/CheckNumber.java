@@ -15,6 +15,6 @@ public class CheckNumber {
             System.out.println("The number is zero.");
         }
         
-        scan.close();
+        
     }
 }
