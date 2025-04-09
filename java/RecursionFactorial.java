@@ -28,7 +28,7 @@
 // }
 
 
-public class RecursiveFactorialApp {
+public class hello {
     static class RecursiveFactorial {
         public int factorial(int n) {
             if (n == 0 || n == 1)
@@ -47,13 +47,13 @@ class User {
     }
 
     public void callFactorial() {
-        RecursiveFactorialApp.RecursiveFactorial rf = new RecursiveFactorialApp.RecursiveFactorial();
+        hello.RecursiveFactorial rf = new hello.RecursiveFactorial();
         int result = rf.factorial(number);  
         System.out.println("Factorial of " + number + " is " + result);  
     }
 }
 
-public class Main {
+public class RecursionFactorial {
     public static void main(String[] args) {
         User user = new User();
         user.setNumber(8);

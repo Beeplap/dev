@@ -13,4 +13,4 @@ class Device {
       myPhone.powerOn();
       System.out.println(myPhone.type + " " + myPhone.model);
     }
-  }uuu
+  }

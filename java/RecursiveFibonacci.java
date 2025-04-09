@@ -1,4 +1,4 @@
-public class RecursiveFibonacciApp {
+class RecursiveFibonacciApp {
     static class RecursiveFibonacci {
         public int fibonacci(int n) {
             if (n == 0)
@@ -32,7 +32,7 @@ class User {
     }
 }
 
-public class Main {
+public class RecursiveFibonacci {
     public static void main(String[] args) {
         User user = new User();
         user.setNumber(10); 
