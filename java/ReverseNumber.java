@@ -8,9 +8,9 @@ public class ReverseNumber {
         int reversed = 0;
 
         while (num != 0) {
-            int digit = num % 10;  // Get the last digit
-            reversed = reversed * 10 + digit;  // Append to reversed number
-            num /= 10;  // Remove last digit
+            int digit = num % 10;  
+            reversed = reversed * 10 + digit;  
+            num /= 10; 
         }
 
         System.out.println("Reversed number: " + reversed);
