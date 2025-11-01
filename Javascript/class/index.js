@@ -28,19 +28,32 @@
 //     sum += i;
 
 //   }
-  
+
 // }
 // document.writeln(sum);
 
+//
+// sum = 0;
+// for (let i = 5; i >= 1; i--) {
+//   for (let j = 5; j>= i; --j) {
+//     document.writeln("*")
 
-// 
-sum = 0;
-for (let i = 5; i >= 1; i--) {
-  for (let j = 5; j>= i; --j) {
-    document.writeln("*")
-    
-  }
-  document.writeln("<br>")
+//   }
+//   document.writeln("<br>")
+
+// }
+
+var array = [];
+var sum = 0;
+for (let i = 0; i < 10; i++) {
+  element = array[i];
+  prnt = parseInt(prompt("Enter the numbers: "));
+  sum += prnt;
+
+  document.writeln(prnt)            
+  
+
   
 }
-  
+document.writeln("The sum of 10 arrays are: " + sum);
+
